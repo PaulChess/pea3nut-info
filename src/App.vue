@@ -17,7 +17,7 @@
                     to   :'/job'
                 },{
                     name :'page-about',
-                    text :'关于',
+                    text :'关于我',
                     to   :'/about'
                 }]"
                 :active="loadedPageCompName"

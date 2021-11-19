@@ -3,9 +3,6 @@ node_js:
   - "12"
 services:
   - docker
-branches:
-  only:
-    - master
 
 before_install:
   - npm install
@@ -13,5 +10,5 @@ before_install:
 script:
   - npm run build
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker build -t pea3nut/pea3nut-info:latest .
-  - docker push pea3nut/pea3nut-info:latest
+  - docker build -t blackcodingcat/pea3nut-info:latest .
+  - docker push blackcodingcat/pea3nut-info:latest
